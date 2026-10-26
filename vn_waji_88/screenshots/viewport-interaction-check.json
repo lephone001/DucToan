@@ -1,0 +1,27 @@
+{
+  "desktopWheel": true,
+  "galleryWheelDirect": true,
+  "keyboard": true,
+  "navigation": true,
+  "mobileSwipe": true,
+  "fileMobileImage": true,
+  "footerTabs": true,
+  "footerKeyboard": true,
+  "dialog": true,
+  "dialogClose": true,
+  "backTop": true,
+  "landscapeTabs": true,
+  "landscapeBackground": true,
+  "reducedMotion": true,
+  "cdnFallback": true,
+  "mobileSwipeDetails": [
+    {
+      "url": "http://127.0.0.1:7088/",
+      "index": 1
+    },
+    {
+      "url": "file:///C:/Windows/dev/ductoan-seo/app/view/template/vn_waji_88/index.html",
+      "index": 1
+    }
+  ]
+}

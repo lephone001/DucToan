@@ -1,0 +1,43 @@
+{
+  "brand": "ĐỨC TOÀN",
+  "service": "ĐỤC PHÁ BÊ TÔNG",
+  "domain": "ducphabetongmiennam.com",
+  "fullpageLicenseKey": "",
+  "phone": null,
+  "zaloUrl": null,
+  "address": null,
+  "email": null,
+  "areas": [
+    "TPHCM",
+    "Bình Dương",
+    "Đồng Nai",
+    "Long An"
+  ],
+  "process": [
+    "Tiếp nhận nhu cầu",
+    "Khảo sát công trình",
+    "Báo giá & thương lượng",
+    "Bắt đầu thi công",
+    "Hoàn tất thi công",
+    "Nghiệm thu & bàn giao",
+    "Bảo trì sau thi công"
+  ],
+  "advantages": [
+    {
+      "title": "PHƯƠNG ÁN PHÙ HỢP",
+      "text": "Khảo sát hiện trạng, lựa chọn giải pháp theo công trình."
+    },
+    {
+      "title": "BÁO GIÁ RÕ RÀNG",
+      "text": "Làm rõ hạng mục và khối lượng trước khi thi công."
+    },
+    {
+      "title": "THIẾT BỊ THEO HẠNG MỤC",
+      "text": "Bố trí máy móc theo nhu cầu và điều kiện thi công."
+    },
+    {
+      "title": "ĐỒNG HÀNH ĐẾN BÀN GIAO",
+      "text": "Phối hợp kiểm tra và tiếp nhận phản hồi sau thi công."
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "file": "02_assets/photo_wall/wall-01.webp",
+    "source": "02_assets/photos/01-concrete-breaking.webp",
+    "variant": 1
+  },
+  {
+    "file": "02_assets/photo_wall/wall-02.webp",
+    "source": "02_assets/photos/01-concrete-breaking.webp",
+    "variant": 2
+  },
+  {
+    "file": "02_assets/photo_wall/wall-03.webp",
+    "source": "02_assets/photos/01-concrete-breaking.webp",
+    "variant": 3
+  },
+  {
+    "file": "02_assets/photo_wall/wall-04.webp",
+    "source": "02_assets/photos/01-concrete-breaking.webp",
+    "variant": 4
+  },
+  {
+    "file": "02_assets/photo_wall/wall-05.webp",
+    "source": "02_assets/photos/01-concrete-breaking.webp",
+    "variant": 5
+  },
+  {
+    "file": "02_assets/photo_wall/wall-06.webp",
+    "source": "02_assets/photos/01-concrete-breaking.webp",
+    "variant": 6
+  },
+  {
+    "file": "02_assets/photo_wall/wall-07.webp",
+    "source": "02_assets/photos/02-warehouse-demolition.webp",
+    "variant": 1
+  },
+  {
+    "file": "02_assets/photo_wall/wall-08.webp",
+    "source": "02_assets/photos/02-warehouse-demolition.webp",
+    "variant": 2
+  },
+  {
+    "file": "02_assets/photo_wall/wall-09.webp",
+    "source": "02_assets/photos/02-warehouse-demolition.webp",
+    "variant": 3
+  },
+  {
+    "file": "02_assets/photo_wall/wall-10.webp",
+    "source": "02_assets/photos/02-warehouse-demolition.webp",
+    "variant": 4
+  },
+  {
+    "file": "02_assets/photo_wall/wall-11.webp",
+    "source": "02_assets/photos/02-warehouse-demolition.webp",
+    "variant": 5
+  },
+  {
+    "file": "02_assets/photo_wall/wall-12.webp",
+    "source": "02_assets/photos/02-warehouse-demolition.webp",
+    "variant": 6
+  },
+  {
+    "file": "02_assets/photo_wall/wall-13.webp",
+    "source": "02_assets/photos/03-core-drilling.webp",
+    "variant": 1
+  },
+  {
+    "file": "02_assets/photo_wall/wall-14.webp",
+    "source": "02_assets/photos/03-core-drilling.webp",
+    "variant": 2
+  },
+  {
+    "file": "02_assets/photo_wall/wall-15.webp",
+    "source": "02_assets/photos/03-core-drilling.webp",
+    "variant": 3
+  },
+  {
+    "file": "02_assets/photo_wall/wall-16.webp",
+    "source": "02_assets/photos/03-core-drilling.webp",
+    "variant": 4
+  },
+  {
+    "file": "02_assets/photo_wall/wall-17.webp",
+    "source": "02_assets/photos/03-core-drilling.webp",
+    "variant": 5
+  },
+  {
+    "file": "02_assets/photo_wall/wall-18.webp",
+    "source": "02_assets/photos/03-core-drilling.webp",
+    "variant": 6
+  },
+  {
+    "file": "02_assets/photo_wall/wall-19.webp",
+    "source": "02_assets/photos/04-floor-cutting.webp",
+    "variant": 1
+  },
+  {
+    "file": "02_assets/photo_wall/wall-20.webp",
+    "source": "02_assets/photos/04-floor-cutting.webp",
+    "variant": 2
+  },
+  {
+    "file": "02_assets/photo_wall/wall-21.webp",
+    "source": "02_assets/photos/04-floor-cutting.webp",
+    "variant": 3
+  },
+  {
+    "file": "02_assets/photo_wall/wall-22.webp",
+    "source": "02_assets/photos/04-floor-cutting.webp",
+    "variant": 4
+  },
+  {
+    "file": "02_assets/photo_wall/wall-23.webp",
+    "source": "02_assets/photos/04-floor-cutting.webp",
+    "variant": 5
+  },
+  {
+    "file": "02_assets/photo_wall/wall-24.webp",
+    "source": "02_assets/photos/04-floor-cutting.webp",
+    "variant": 6
+  },
+  {
+    "file": "02_assets/photo_wall/wall-25.webp",
+    "source": "02_assets/photos/05-foundation-breaking.webp",
+    "variant": 1
+  },
+  {
+    "file": "02_assets/photo_wall/wall-26.webp",
+    "source": "02_assets/photos/05-foundation-breaking.webp",
+    "variant": 2
+  },
+  {
+    "file": "02_assets/photo_wall/wall-27.webp",
+    "source": "02_assets/photos/05-foundation-breaking.webp",
+    "variant": 3
+  },
+  {
+    "file": "02_assets/photo_wall/wall-28.webp",
+    "source": "02_assets/photos/05-foundation-breaking.webp",
+    "variant": 4
+  },
+  {
+    "file": "02_assets/photo_wall/wall-29.webp",
+    "source": "02_assets/photos/05-foundation-breaking.webp",
+    "variant": 5
+  },
+  {
+    "file": "02_assets/photo_wall/wall-30.webp",
+    "source": "02_assets/photos/05-foundation-breaking.webp",
+    "variant": 6
+  },
+  {
+    "file": "02_assets/photo_wall/wall-31.webp",
+    "source": "02_assets/photos/06-site-handover.webp",
+    "variant": 1
+  },
+  {
+    "file": "02_assets/photo_wall/wall-32.webp",
+    "source": "02_assets/photos/06-site-handover.webp",
+    "variant": 2
+  },
+  {
+    "file": "02_assets/photo_wall/wall-33.webp",
+    "source": "02_assets/photos/06-site-handover.webp",
+    "variant": 3
+  },
+  {
+    "file": "02_assets/photo_wall/wall-34.webp",
+    "source": "02_assets/photos/06-site-handover.webp",
+    "variant": 4
+  },
+  {
+    "file": "02_assets/photo_wall/wall-35.webp",
+    "source": "02_assets/photos/06-site-handover.webp",
+    "variant": 5
+  },
+  {
+    "file": "02_assets/photo_wall/wall-36.webp",
+    "source": "02_assets/photos/06-site-handover.webp",
+    "variant": 6
+  }
+]

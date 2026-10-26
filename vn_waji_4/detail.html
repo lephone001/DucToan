@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{detail.title|safe}} | {{domain.titleText}}</title>
+  <meta name="description" content="{{detail.description}}">
+  <link rel="canonical" href="{{domain.httpFullDomain}}/detail/{{detail._id}}.html">
+  <meta property="og:title" content="{{detail.title|safe}} | {{domain.titleText}}">
+  <meta property="og:description" content="{{detail.description}}">
+  <meta property="og:type" content="article">
+
+  <link rel="icon" href="{{domain.sfurl.mubanStaticUrl}}/{{domain.tname}}/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="{{domain.sfurl.mubanStaticJsUrl}}/{{domain.tname}}/static/assets/css/style.css?v=380">
+  <link rel="stylesheet" href="/vn_waji_4/static/assets/css/article-list.css?v=2">
+  <link rel="stylesheet" href="/vn_waji_4/static/assets/css/article-detail.css?v=3">
+</head>
+<body class="article-directory-page article-detail-page">
+  {% include "template/vn_waji_4/common_header.html" %}
+  <main>
+    <article class="detail-page">
+      <div class="container article-layout detail-layout">
+        <div class="detail-main">
+          <header class="detail-heading">
+            <nav class="breadcrumb" aria-label="Điều hướng"><a href="/">Trang chủ</a><span>/</span><a href="/article.html">Bài viết</a></nav>
+            <div class="detail-meta">
+              {% if detail.articleCategory %}<span class="directory-category">{{detail.articleCategory}}</span>{% endif %}
+              {% if detail.dateText %}<time datetime="{{detail.dateISO}}">{{detail.dateText}} (GMT+7)</time>{% endif %}
+              <span>{{detail.view or 0}} lượt xem</span>
+            </div>
+            <h1>{{detail.title|safe}}</h1>
+            {% if detail.description %}<p>{{detail.description | striptags}}</p>{% endif %}
+          </header>
+          <div class="detail-content">
+          {{detail.content|safe}}
+          </div>
+          <nav class="article-pagination detail-pagination" aria-label="Bài viết trước và sau">
+            {% if previousArticle %}<a rel="prev" href="/detail/{{previousArticle._id}}.html"><span>← Bài trước</span><strong>{{previousArticle.title | striptags}}</strong></a>{% else %}<span class="pagination-disabled" aria-disabled="true">Không có bài trước</span>{% endif %}
+            {% if nextArticle %}<a rel="next" href="/detail/{{nextArticle._id}}.html"><span>Bài sau →</span><strong>{{nextArticle.title | striptags}}</strong></a>{% else %}<span class="pagination-disabled" aria-disabled="true">Không có bài sau</span>{% endif %}
+          </nav>
+          <a class="detail-back" href="/article.html">← Tất cả bài viết</a>
+        </div>
+        <aside class="article-sidebar">
+          {% if articleList.length %}<div class="side-box"><h3>Bài viết liên quan</h3>{% for item in articleList %}{% if loop.index <= 5 %}<a href="/detail/{{item._id}}.html">{{item.title | striptags}}</a>{% endif %}{% endfor %}</div>{% endif %}
+          <div class="side-box contact-box"><h3>Dịch vụ liên quan</h3><a href="/index.html#khoan-cat">Khoan cắt bê tông</a><a href="/index.html#may-xuc">Thuê máy xúc</a><a href="/index.html#xa-ban">Vận chuyển xà bần</a></div>
+        </aside>
+      </div>
+    </article>
+  </main>
+  {% include "template/vn_waji_4/common_footer.html" %}
+</body>
+</html>

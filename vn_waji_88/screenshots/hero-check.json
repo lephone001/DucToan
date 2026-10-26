@@ -1,0 +1,57 @@
+{
+  "checks": [
+    {
+      "width": 90,
+      "protocol": "http",
+      "height": 90,
+      "imageWidth": 90,
+      "imageHeight": 90,
+      "initialized": true,
+      "backgroundLoaded": true,
+      "canvasCount": 2,
+      "fullpage": true,
+      "horizontalOverflow": false,
+      "viewportWidth": 1440
+    },
+    {
+      "width": 90,
+      "protocol": "file",
+      "height": 90,
+      "imageWidth": 90,
+      "imageHeight": 90,
+      "initialized": true,
+      "backgroundLoaded": true,
+      "canvasCount": 2,
+      "fullpage": true,
+      "horizontalOverflow": false,
+      "viewportWidth": 1440
+    },
+    {
+      "width": 90,
+      "protocol": "http",
+      "height": 90,
+      "imageWidth": 90,
+      "imageHeight": 90,
+      "initialized": true,
+      "backgroundLoaded": true,
+      "canvasCount": 2,
+      "fullpage": true,
+      "horizontalOverflow": false,
+      "viewportWidth": 390
+    },
+    {
+      "width": 90,
+      "protocol": "file",
+      "height": 90,
+      "imageWidth": 90,
+      "imageHeight": 90,
+      "initialized": true,
+      "backgroundLoaded": true,
+      "canvasCount": 2,
+      "fullpage": true,
+      "horizontalOverflow": false,
+      "viewportWidth": 390
+    }
+  ],
+  "failures": []
+}

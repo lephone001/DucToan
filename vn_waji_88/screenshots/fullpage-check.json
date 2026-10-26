@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "initialized": {
+        "enabled": true,
+        "sections": 7,
+        "auto": true,
+        "responsive": false
+      }
+    },
+    {
+      "width": 390,
+      "initialized": {
+        "enabled": true,
+        "sections": 7,
+        "auto": false,
+        "responsive": true
+      }
+    },
+    {
+      "width": 768,
+      "initialized": {
+        "enabled": true,
+        "sections": 7,
+        "auto": true,
+        "responsive": false
+      }
+    }
+  ],
+  "failures": [],
+  "licenseMessages": [
+    "fullPage: Fullpage.js requires a `licenseKey` option. Read about it on the following website:",
+    "fullPage: https://alvarotrigo.com/fullPage/docs/#licensekey"
+  ]
+}

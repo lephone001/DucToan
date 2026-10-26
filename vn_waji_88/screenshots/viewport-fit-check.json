@@ -1,0 +1,750 @@
+{
+  "result": [
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 1080,
+          "scroll": 1080,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 1080,
+          "scroll": 1080,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 1080,
+          "scroll": 1080,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 1080,
+          "scroll": 1080,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 1080,
+          "scroll": 1080,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 1080,
+          "scroll": 1080,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 1080,
+          "scroll": 1080,
+          "scale": 1,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 900,
+          "scroll": 900,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 900,
+          "scroll": 900,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 900,
+          "scroll": 900,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 900,
+          "scroll": 900,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 900,
+          "scroll": 900,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 900,
+          "scroll": 900,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 900,
+          "scroll": 900,
+          "scale": 1,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        1366,
+        768
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 768,
+          "scroll": 768,
+          "scale": 0.93,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 768,
+          "scroll": 768,
+          "scale": 1,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 1024,
+          "scroll": 1024,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 1024,
+          "scroll": 1024,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 1024,
+          "scroll": 1024,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 1024,
+          "scroll": 1024,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 1024,
+          "scroll": 1024,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 1024,
+          "scroll": 1024,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 1024,
+          "scroll": 1024,
+          "scale": 1,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        430,
+        932
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 932,
+          "scroll": 932,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 932,
+          "scroll": 932,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 932,
+          "scroll": 932,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 932,
+          "scroll": 932,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 932,
+          "scroll": 932,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 932,
+          "scroll": 932,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 932,
+          "scroll": 932,
+          "scale": 1,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city-mobile.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 844,
+          "scroll": 844,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 844,
+          "scroll": 844,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 844,
+          "scroll": 844,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 844,
+          "scroll": 844,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 844,
+          "scroll": 844,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 844,
+          "scroll": 844,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 844,
+          "scroll": 844,
+          "scale": 1,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city-mobile.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        375,
+        667
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 667,
+          "scroll": 667,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 667,
+          "scroll": 667,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 667,
+          "scroll": 667,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 667,
+          "scroll": 667,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 667,
+          "scroll": 667,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 667,
+          "scroll": 667,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 667,
+          "scroll": 667,
+          "scale": 0.92,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city-mobile.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        360,
+        640
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 640,
+          "scroll": 640,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 640,
+          "scroll": 640,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 640,
+          "scroll": 640,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 640,
+          "scroll": 640,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 640,
+          "scroll": 640,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 640,
+          "scroll": 640,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 640,
+          "scroll": 640,
+          "scale": 0.873,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city-mobile.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 568,
+          "scroll": 568,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 568,
+          "scroll": 568,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 568,
+          "scroll": 568,
+          "scale": 0.903,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 568,
+          "scroll": 568,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 568,
+          "scroll": 568,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 568,
+          "scroll": 568,
+          "scale": 0.872,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 568,
+          "scroll": 568,
+          "scale": 0.887,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city-mobile.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 390,
+          "scroll": 390,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 390,
+          "scroll": 390,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 390,
+          "scroll": 390,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 390,
+          "scroll": 390,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 390,
+          "scroll": 390,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 390,
+          "scroll": 390,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 390,
+          "scroll": 390,
+          "scale": 1,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    },
+    {
+      "viewport": [
+        667,
+        375
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "height": 375,
+          "scroll": 375,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "gioi-thieu",
+          "height": 375,
+          "scroll": 375,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "quy-trinh",
+          "height": 375,
+          "scroll": 375,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "khu-vuc",
+          "height": 375,
+          "scroll": 375,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "hinh-anh",
+          "height": 375,
+          "scroll": 375,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "uu-diem",
+          "height": 375,
+          "scroll": 375,
+          "scale": 1,
+          "outside": []
+        },
+        {
+          "id": "lien-he",
+          "height": 375,
+          "scroll": 375,
+          "scale": 1,
+          "outside": []
+        }
+      ],
+      "background": {
+        "src": "http://127.0.0.1:7088/static/assets/backgrounds/screen04-modern-city.png",
+        "loaded": true
+      },
+      "overflowContainers": 0
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

@@ -1,0 +1,528 @@
+{
+  "results": [
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "connections": 5,
+      "red": 2343,
+      "blue": 2278,
+      "rings": [
+        280,
+        280,
+        280,
+        280,
+        280,
+        280
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "gioi-thieu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "quy-trinh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "khu-vuc",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "hinh-anh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "uu-diem",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "lien-he",
+          "overflow": false,
+          "scale": "1.000"
+        }
+      ],
+      "moving": true,
+      "ground": {
+        "loaded": true,
+        "anchor": [
+          1277.17296875,
+          943.38890625
+        ],
+        "edgeMask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 15%, rgb(0, 0, 0) 83%, rgba(0, 0, 0, 0))"
+      }
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "connections": 5,
+      "red": 2322,
+      "blue": 2249,
+      "rings": [
+        239,
+        239,
+        239,
+        239,
+        239,
+        239
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "gioi-thieu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "quy-trinh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "khu-vuc",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "hinh-anh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "uu-diem",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "lien-he",
+          "overflow": false,
+          "scale": "1.000"
+        }
+      ],
+      "moving": true,
+      "ground": {
+        "loaded": true,
+        "anchor": [
+          957.8815625000001,
+          802.0425
+        ],
+        "edgeMask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 15%, rgb(0, 0, 0) 83%, rgba(0, 0, 0, 0))"
+      }
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "connections": 5,
+      "red": 2079,
+      "blue": 2009,
+      "rings": [
+        192,
+        192,
+        192,
+        192,
+        192,
+        192
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "gioi-thieu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "quy-trinh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "khu-vuc",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "hinh-anh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "uu-diem",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "lien-he",
+          "overflow": false,
+          "scale": "1.000"
+        }
+      ],
+      "moving": true,
+      "ground": {
+        "loaded": true,
+        "anchor": [
+          681.1640625,
+          704.7309375
+        ],
+        "edgeMask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 15%, rgb(0, 0, 0) 83%, rgba(0, 0, 0, 0))"
+      }
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "connections": 5,
+      "red": 1484,
+      "blue": 1376,
+      "rings": [
+        187,
+        187,
+        187,
+        187,
+        187,
+        187
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "gioi-thieu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "quy-trinh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "khu-vuc",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "hinh-anh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "uu-diem",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "lien-he",
+          "overflow": false,
+          "scale": "1.000"
+        }
+      ],
+      "moving": true,
+      "ground": {
+        "loaded": true,
+        "anchor": [
+          510.87671875,
+          998.944375
+        ],
+        "edgeMask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 15%, rgb(0, 0, 0) 83%, rgba(0, 0, 0, 0))"
+      }
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "connections": 5,
+      "red": 821,
+      "blue": 827,
+      "rings": [
+        106,
+        106,
+        106,
+        106,
+        106,
+        106
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "gioi-thieu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "quy-trinh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "khu-vuc",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "hinh-anh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "uu-diem",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "lien-he",
+          "overflow": false,
+          "scale": "1.000"
+        }
+      ],
+      "moving": true,
+      "ground": {
+        "loaded": true,
+        "anchor": [
+          206.89500000000004,
+          758.7301562499999
+        ],
+        "edgeMask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 15%, rgb(0, 0, 0) 83%, rgba(0, 0, 0, 0))"
+      }
+    },
+    {
+      "viewport": [
+        375,
+        667
+      ],
+      "connections": 5,
+      "red": 891,
+      "blue": 910,
+      "rings": [
+        64,
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "gioi-thieu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "quy-trinh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "khu-vuc",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "hinh-anh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "uu-diem",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "lien-he",
+          "overflow": false,
+          "scale": "0.920"
+        }
+      ],
+      "moving": true,
+      "ground": {
+        "loaded": true,
+        "anchor": [
+          198.9375,
+          585.0081250000001
+        ],
+        "edgeMask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 15%, rgb(0, 0, 0) 83%, rgba(0, 0, 0, 0))"
+      }
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "connections": 5,
+      "red": 883,
+      "blue": 909,
+      "rings": [
+        58,
+        58,
+        58,
+        58,
+        58,
+        58
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "gioi-thieu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "quy-trinh",
+          "overflow": false,
+          "scale": "0.903"
+        },
+        {
+          "id": "khu-vuc",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "hinh-anh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "uu-diem",
+          "overflow": false,
+          "scale": "0.872"
+        },
+        {
+          "id": "lien-he",
+          "overflow": false,
+          "scale": "0.887"
+        }
+      ],
+      "moving": true,
+      "ground": {
+        "loaded": true,
+        "anchor": [
+          169.76,
+          498.03390625000003
+        ],
+        "edgeMask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 15%, rgb(0, 0, 0) 83%, rgba(0, 0, 0, 0))"
+      }
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "connections": 5,
+      "red": 2461,
+      "blue": 2476,
+      "rings": [
+        64,
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "panels": [
+        {
+          "id": "trang-chu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "gioi-thieu",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "quy-trinh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "khu-vuc",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "hinh-anh",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "uu-diem",
+          "overflow": false,
+          "scale": "1.000"
+        },
+        {
+          "id": "lien-he",
+          "overflow": false,
+          "scale": "1.000"
+        }
+      ],
+      "moving": true,
+      "ground": {
+        "loaded": true,
+        "anchor": [
+          561.41703125,
+          325.71328125
+        ],
+        "edgeMask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 15%, rgb(0, 0, 0) 83%, rgba(0, 0, 0, 0))"
+      }
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "interactions": {
+    "localGallery": true,
+    "localImages": true,
+    "offscreenPause": true,
+    "orbHalf": true,
+    "coreAlignment": true,
+    "localComposite": true,
+    "reducedMotion": true,
+    "allImagesRemain": true,
+    "brighterTitle": true,
+    "resizeAndMotion": true
+  },
+  "filePageErrors": [],
+  "offscreenDrawCount": {
+    "visible": 118,
+    "offscreenStart": 120,
+    "offscreenEnd": 120
+  }
+}

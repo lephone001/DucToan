@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "width": 390,
+      "animates": true,
+      "pausesWhenHidden": true,
+      "resumes": true
+    },
+    {
+      "width": 1440,
+      "animates": true,
+      "pausesWhenHidden": true,
+      "resumes": true
+    }
+  ],
+  "failures": []
+}

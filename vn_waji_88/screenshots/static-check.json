@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "url": "file:///C:/Windows/dev/ductoan-seo/app/view/template/vn_waji_88/index.html",
+      "width": 1440,
+      "fullpageEnabled": true,
+      "missingImages": 0
+    },
+    {
+      "url": "file:///C:/Windows/dev/ductoan-seo/app/view/template/vn_waji_88/index.html",
+      "width": 390,
+      "fullpageEnabled": true,
+      "missingImages": 0
+    },
+    {
+      "url": "http://127.0.0.1:7088/",
+      "width": 1440,
+      "fullpageEnabled": true,
+      "missingImages": 0
+    },
+    {
+      "url": "http://127.0.0.1:7088/vn_waji_88/index.html",
+      "width": 390,
+      "fullpageEnabled": true,
+      "missingImages": 0
+    }
+  ],
+  "failures": []
+}

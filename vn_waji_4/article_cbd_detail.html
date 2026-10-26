@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{detail.title|safe}} | {{domain.titleText}}</title>
+  <meta name="description" content="{{detail.description}}">
+  <meta name="keywords" content="{{detail.keywords}}">
+  <meta property="og:title" content="{{detail.title|safe}}">
+  <meta property="og:description" content="{{detail.description}}">
+  <meta property="og:type" content="article">
+  <meta name="author" content="{{domain.titleText}}">
+  <meta name="copyright" content="{{domain.title}} - {{domain.link}}">
+  <meta name="application-name" content="{{domain.titleText2}}">
+  <meta data-hid="theme-color" name="theme-color" content="{{domain.themeColor}}">
+  <meta name="shareaholic:image" content="{{detail.image}}">
+  <meta name="og:image" content="{{detail.image}}">
+  <link rel="icon" href="{{domain.sfurl.mubanStaticUrl}}/{{domain.tname}}/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="{{domain.sfurl.mubanStaticJsUrl}}/{{domain.tname}}/static/assets/css/style.css?v=382">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{detail.title|safe}}",
+    "description": "{{detail.description}}",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "{{ ratingValue or 4.8 }}",
+      "ratingCount": "{{ ratingCount or 12 }}",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+</head>
+<body>
+  {% include "template/vn_waji_4/common_header.html" %}
+  <main>
+    <section class="cbd-detail-hero">
+      <div class="container">
+        <nav class="breadcrumb"><a href="/" aria-label="Trang chu">Trang chu</a><span>/</span><a href="/v-nl/list.html" aria-label="Danh sach bai viet">Bai viet</a></nav>
+        <p class="cbd-meta">
+          <time
+          class="js-local-date"
+          datetime="{{detail.createdAt}}"
+          data-date="{{detail.createdAt}}">
+          {{detail.createdText}}
+        </time>
+        </p>
+        <h1>{{detail.title|safe}}</h1>
+        <p>{{detail.description}}</p>
+        <div class="article-rating">
+          <span class="stars">★★★★★</span>
+          <strong>{{ ratingValue or 4.8 }}</strong>
+          <span>({{ ratingCount or 12 }} đánh giá)</span>
+          <span class="score-text">Điểm chất lượng: {{ ratingValue or 4.8 }}/5.0</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cbd-detail-main">
+      <div class="container cbd-detail-grid">
+        <article class="cbd-content">
+          {{detail.content|safe}}
+          <nav class="cbd-page-nav" aria-label="Bai viet truoc va tiep theo">
+            {% if detail.prevName %}
+            <a class="cbd-page-link" href="/v-n/{{detail.prevName}}.html" aria-label="Bai truoc {{detail.prevName}}">
+              <span class="cbd-page-label">B&agrave;i tr&#432;&#7899;c</span>
+              <span class="cbd-page-title">{{detail.prevName}}</span>
+            </a>
+            {% else %}
+            <a class="cbd-page-link" href="/v-n/{{detail.block.b_number or detail.id}}.html" aria-label="Bai truoc bai hien tai">
+              <span class="cbd-page-label">B&agrave;i tr&#432;&#7899;c</span>
+              <span class="cbd-page-title">{{detail.title|safe}}</span>
+            </a>
+            {% endif %}
+
+            {% if detail.nextName %}
+            <a class="cbd-page-link" href="/v-n/{{detail.nextName}}.html" aria-label="Bai tiep theo {{detail.nextName}}">
+              <span class="cbd-page-label">B&agrave;i ti&#7871;p theo</span>
+              <span class="cbd-page-title">{{detail.nextName}}</span>
+            </a>
+            {% else %}
+            <a class="cbd-page-link" href="/v-n/{{detail.block.b_number or detail.id}}.html" aria-label="Bai tiep theo bai hien tai">
+              <span class="cbd-page-label">B&agrave;i ti&#7871;p theo</span>
+              <span class="cbd-page-title">{{detail.title|safe}}</span>
+            </a>
+            {% endif %}
+          </nav>
+        </article>
+        <aside class="cbd-sidebar">
+          <h3>Bai viet lien quan</h3>
+          {% for item in relatedList %}
+          <a href="{{item.url}}" aria-label="{{item.title}}">
+            <div><img src="{{domain.sfurl.mubanStaticUrl}}{{item.image}}" alt="{{item.title}}"></div>
+            <h3>{{item.title|safe}}</h3>
+            <div>{{item.description}}</div>
+          </a>
+          {% endfor %}
+        </aside>
+      </div>
+    </section>
+  </main>
+  {% include "template/vn_waji_4/common_footer.html" %}
+  <script>
+   document.querySelectorAll('.js-local-date').forEach(function (element) {
+  const date = new Date(element.dataset.date);
+  if (Number.isNaN(date.getTime())) return;
+
+  element.textContent = new Intl.DateTimeFormat('vi-VN', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    timeZone: 'Asia/Ho_Chi_Minh'
+  }).format(date);
+});
+  </script>
+</body>
+</html>
