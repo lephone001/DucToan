@@ -1,13 +1,13 @@
 # Đức Toàn 七屏静态页面
 
-页面入口和配置位于 `index.html`，样式位于 `static/assets/css/index.css`，Logo 与流体光带脚本位于 `static/assets/js/`。这是纯静态页面，没有 Nunjucks 模板语法，不需要服务端渲染或构建。按要求引用 jsDelivr 的 `https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.js` 和 `https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.css`。图片和碎块精灵统一使用 `./static/assets/` 相对路径；将 `index.html` 与 `static` 文件夹一起移动即可。
+页面入口和配置位于 `index.html`，样式位于 `static/assets/css/index.css`，Logo 与流体光带脚本位于 `static/assets/js/`。这是纯静态页面，没有 Nunjucks 模板语法，不需要服务端渲染或构建。fullPage 4.0.41 的脚本、样式及 Animate.css 4.1.1 均已下载到本地并使用相对路径引用，保留原授权声明。图片和碎块精灵统一使用 `./static/assets/` 相对路径；将 `index.html` 与 `static` 文件夹一起移动即可。
 
 ## 本地查看
 
-可以直接双击 `index.html` 打开，联网时加载 fullpage.js CDN。也可以在项目根目录运行可选的静态预览服务：
+可以直接双击 `index.html` 打开，fullPage 与 Animate.css 从本地加载。也可以在项目根目录运行可选的静态预览服务：
 
 ```powershell
-node app/view/template/vn_waji_88/preview.cjs
+node preview.cjs
 ```
 
 打开 <http://127.0.0.1:7088>。端口可通过 `DUC_TOAN_PREVIEW_PORT` 环境变量修改。该预览服务仅监听本机，使用 Node 内置模块直接发送静态文件，不依赖数据库或模板引擎。

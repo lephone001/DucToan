@@ -110,12 +110,17 @@
 
   function layout() {
     if (destroyed) return;
-    const rect = root.getBoundingClientRect(), orbRect = orb.getBoundingClientRect();
+    const rect = root.getBoundingClientRect();
     const width = Math.max(1, rect.width), height = Math.max(1, rect.height);
-    const fit = Math.min(orbRect.width / (orb.naturalWidth || 627), orbRect.height / (orb.naturalHeight || 681));
-    const coreOffset = (Number(orb.dataset.coreY) - .5) * (orb.naturalHeight || 681) * fit;
-    size.x = orbRect.left - rect.left + orbRect.width / 2;
-    size.y = orbRect.top - rect.top + orbRect.height / 2 + coreOffset;
+    const naturalWidth = orb.naturalWidth || 627, naturalHeight = orb.naturalHeight || 681;
+    const orbWidth = orb.offsetWidth || naturalWidth, orbHeight = orb.offsetHeight || naturalHeight;
+    const fit = Math.min(orbWidth / naturalWidth, orbHeight / naturalHeight);
+    const imageHeight = naturalHeight * fit;
+    const imageTop = (orbHeight - imageHeight) / 2;
+    const coreY = Number(orb.dataset.coreY) || .5;
+    // Use the untransformed image box so rotation and breathing never shift the logo off-center.
+    size.x = orb.offsetLeft - root.offsetLeft + orbWidth / 2;
+    size.y = orb.offsetTop - root.offsetTop + imageTop + imageHeight * coreY;
     toggle.style.left = size.x + 'px'; toggle.style.top = size.y + 'px';
     const resized = size.width !== width || size.height !== height;
     size.width = width; size.height = height;
