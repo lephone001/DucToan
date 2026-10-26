@@ -435,5 +435,5 @@
 
     .process .screen-bg{object-position:center;opacity:1}
     .process::after{background:linear-gradient(90deg,rgba(66,3,14,.62) 0%,rgba(66,3,14,.46) 46%,rgba(5,21,58,.46) 54%,rgba(5,21,58,.6) 100%),linear-gradient(0deg,rgba(3,8,18,.62),transparent 28%,rgba(3,8,18,.18) 72%,rgba(3,8,18,.42))}
-    @media(max-width:767px) and (orientation:portrait){.process .orb{top:auto;bottom:30px;right:0;width:60%;height:65vw}.process-energy-toggle{left:70%;top:calc(100% - 30px - 30.16vw)}}
+    @media(max-width:767px) and (orientation:portrait){.process .orb{top:auto;bottom:calc(40px + clamp(37px,10.5vw,70px) - 30.16vw);right:0;width:60%;height:65vw}.process-energy-toggle{left:70%;top:auto;bottom:40px;transform:translateX(-50%)}}
   
