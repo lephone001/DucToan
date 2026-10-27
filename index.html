@@ -8,7 +8,7 @@
   <meta name="description" content="Khoan cắt bê tông, tháo dỡ công trình, khoan cắt bê tông. Đức Toàn phục vụ tại TPHCM, Bình Dương, Đồng Nai và Long An.">
   <link rel="icon" type="image/png" href="./static/assets/brand/logo-original.png">
   <link rel="stylesheet" href="./static/assets/css/animate.min.css">
-  <link rel="stylesheet" href="./static/assets/css/index.css?v=48">
+  <link rel="stylesheet" href="./static/assets/css/index.css?v=49">
 </head>
 <body data-section="0">
   <a class="skip-link" href="#gioi-thieu">Đến nội dung chính</a>
@@ -73,8 +73,6 @@
       <img class="screen-bg intro-background" src="./static/assets/backgrounds/screen02-gallery-wall.png" width="1536" height="864" loading="lazy" decoding="async" alt="" aria-hidden="true">
       <div class="intro-ground" aria-hidden="true">
         <img src="./static/assets/backgrounds/screen02-ground-rubble.png" width="1672" height="941" loading="lazy" decoding="async" data-vortex-x="0.53" data-vortex-y="0.79" alt="">
-        <img class="intro-ground__drift intro-ground__drift--near" src="./static/assets/backgrounds/screen02-ground-rubble.png" width="1672" height="941" loading="lazy" decoding="async" alt="">
-        <img class="intro-ground__drift intro-ground__drift--far" src="./static/assets/backgrounds/screen02-ground-rubble.png" width="1672" height="941" loading="lazy" decoding="async" alt="">
       </div>
       <div class="vortex-stage" aria-hidden="true"></div>
       <canvas class="vfx-canvas" aria-hidden="true"></canvas>
@@ -605,9 +603,9 @@
           // Keep a responsive virtual funnel; no static tornado image is needed.
           const width = 627 * fit, height = 690 * fit;
           const ground = effect.section.querySelector('.intro-ground img');
-          const floor = ground.getBoundingClientRect();
-          const anchorX = floor.left - rect.left + floor.width * Number(ground.dataset.vortexX);
-          const anchorY = floor.top - rect.top + floor.height * Number(ground.dataset.vortexY);
+          // Measure the image's layout box so its slow drift cannot shift the funnel anchor.
+          const anchorX = ground.offsetLeft + ground.offsetWidth * Number(ground.dataset.vortexX);
+          const anchorY = ground.offsetTop + ground.offsetHeight * Number(ground.dataset.vortexY);
           effect.vortexGeometry = { left: anchorX - width * .535, top: anchorY - height * .965, width, height };
           const count = mobile.matches ? 36 : 84;
           if (!effect.filaments || effect.filaments.length !== count) {
