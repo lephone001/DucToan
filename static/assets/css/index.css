@@ -497,4 +497,14 @@
       .contact-screen .footer-panel:not([hidden]){width:100%;margin-block:auto}
       .contact-screen .footer-bottom{flex:none}
     }
+
+    /* iOS Chrome's toolbars can leave innerHeight shorter than the visible page. */
+    html.ios-chrome.fp-enabled,html.ios-chrome.fp-enabled body{height:var(--screen-height,100dvh)}
+    html.ios-chrome .screen>.fixed-brand{position:absolute;z-index:20}
+    @media(max-width:767px) and (orientation:portrait){
+      html.ios-chrome .intro .intro-copy{min-height:calc(var(--screen-height,100svh) - 240px)}
+    }
+    @media(max-width:767px) and (orientation:landscape){
+      html.ios-chrome .intro .screen-layout{height:var(--screen-height,100svh)}
+    }
   

@@ -8,7 +8,7 @@
   <meta name="description" content="Khoan cắt bê tông, tháo dỡ công trình, khoan cắt bê tông. Đức Toàn phục vụ tại TPHCM, Bình Dương, Đồng Nai và Long An.">
   <link rel="icon" type="image/png" href="./static/assets/brand/logo-original.png">
   <link rel="stylesheet" href="./static/assets/css/animate.min.css">
-  <link rel="stylesheet" href="./static/assets/css/index.css?v=51">
+  <link rel="stylesheet" href="./static/assets/css/index.css?v=52">
 </head>
 <body data-section="0">
   <a class="skip-link" href="#gioi-thieu">Đến nội dung chính</a>
@@ -266,7 +266,7 @@
 </script>
   <script src="./static/assets/js/logo-particles.js" defer></script>
   <script src="./static/assets/js/process-ribbons.js?v=3" defer></script>
-  <script src="./static/assets/js/screen-scroll.js"></script>
+  <script src="./static/assets/js/screen-scroll.js?v=2"></script>
   <script>
     (() => {
       'use strict';
@@ -281,6 +281,7 @@
       let fullpageInstance = null;
       const fullpagePanels = [];
       const backTopRocket = document.getElementById('rocket-back-top');
+      const fixedBrand = document.querySelector('.fixed-brand');
       let rocketLaunchFinished = false;
 
       const floatingParticles = document.querySelector('.hero-floating-particles');
@@ -382,7 +383,7 @@
       function fitScreenLayouts() {
         layoutFrame = 0;
         updateFooterTabs();
-        const height = window.innerHeight;
+        const height = window.ScreenScroll ? window.ScreenScroll.viewportHeight() : window.innerHeight;
         document.documentElement.style.setProperty('--screen-height', height + 'px');
         layouts.forEach(({ section, slot, layout }) => {
           const style = getComputedStyle(section);
@@ -421,11 +422,17 @@
       fitScreenLayouts();
       window.addEventListener('resize', queueLayout);
       window.addEventListener('load', queueLayout);
+      if (window.ScreenScroll && window.ScreenScroll.iosChrome && window.visualViewport) {
+        window.visualViewport.addEventListener('resize', queueLayout);
+      }
       compactFooter.addEventListener('change', queueLayout);
       if (document.fonts) document.fonts.ready.then(queueLayout);
       cleanups.push(() => {
         cancelAnimationFrame(layoutFrame);
         window.removeEventListener('resize', queueLayout); window.removeEventListener('load', queueLayout);
+        if (window.ScreenScroll && window.ScreenScroll.iosChrome && window.visualViewport) {
+          window.visualViewport.removeEventListener('resize', queueLayout);
+        }
         compactFooter.removeEventListener('change', queueLayout);
       });
 
@@ -478,6 +485,11 @@
       }
       function setCurrent(index) {
         currentSection = index;
+        // A fixed element can sit behind Chrome's iOS toolbar while the page
+        // itself is translated. Keep the logo at the top of the active panel.
+        if (window.ScreenScroll && window.ScreenScroll.iosChrome && fixedBrand) {
+          sections[index].appendChild(fixedBrand);
+        }
         syncRocketVisibility(index);
         document.body.dataset.section = String(index);
         document.body.style.setProperty('--active', index);
@@ -1102,7 +1114,15 @@
         cleanups.forEach(cleanup => cleanup());
         window.removeEventListener('pagehide', onPageHide); window.removeEventListener('pageshow', onPageShow);
       }
-      function onPageShow() { if (pageRestored) { pageRestored = false; syncMotion(); } }
+      function onPageShow() {
+        if (!pageRestored) return;
+        pageRestored = false;
+        if (window.ScreenScroll && window.ScreenScroll.iosChrome) {
+          if (fullpageInstance) fullpageInstance.onResize();
+          queueLayout();
+        }
+        syncMotion();
+      }
       window.addEventListener('pagehide', onPageHide); window.addEventListener('pageshow', onPageShow);
       syncMotion();
     })();

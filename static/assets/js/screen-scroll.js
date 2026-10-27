@@ -2,6 +2,14 @@
 (() => {
   'use strict';
 
+  // iOS Chrome changes its visible area as the browser toolbars move without
+  // consistently updating innerHeight or firing a window resize.
+  const iosChrome = /CriOS\//.test(navigator.userAgent) && /iP(?:hone|ad|od)/.test(navigator.userAgent);
+  const viewport = iosChrome ? window.visualViewport : null;
+  const viewportHeight = () => Math.round(viewport && viewport.height > 0
+    ? Math.max(window.innerHeight, viewport.height) : window.innerHeight);
+  if (iosChrome) document.documentElement.classList.add('ios-chrome');
+
   class ScreenScroll {
     constructor(selector, options = {}) {
       this.root = document.querySelector(selector);
@@ -38,10 +46,11 @@
       this.root.addEventListener('touchend', this.onTouchEnd, { passive: true });
       window.addEventListener('keydown', this.onKeyDown);
       window.addEventListener('resize', this.onResize);
+      if (viewport) viewport.addEventListener('resize', this.onResize);
     }
 
     measure() {
-      this.height = window.innerHeight;
+      this.height = viewportHeight();
       this.panels.forEach(panel => { panel.style.height = `${this.height}px`; });
     }
 
@@ -152,6 +161,7 @@
       this.root.removeEventListener('touchend', this.onTouchEnd);
       window.removeEventListener('keydown', this.onKeyDown);
       window.removeEventListener('resize', this.onResize);
+      if (viewport) viewport.removeEventListener('resize', this.onResize);
       document.documentElement.classList.remove('fp-enabled');
       this.root.classList.remove('screen-scroll-active');
       this.root.style.removeProperty('transition');
@@ -161,4 +171,6 @@
   }
 
   window.ScreenScroll = ScreenScroll;
+  ScreenScroll.viewportHeight = viewportHeight;
+  ScreenScroll.iosChrome = iosChrome;
 })();
