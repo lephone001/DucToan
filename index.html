@@ -8,7 +8,7 @@
   <meta name="description" content="Khoan cắt bê tông, tháo dỡ công trình, khoan cắt bê tông. Đức Toàn phục vụ tại TPHCM, Bình Dương, Đồng Nai và Long An.">
   <link rel="icon" type="image/png" href="./static/assets/brand/logo-original.png">
   <link rel="stylesheet" href="./static/assets/css/animate.min.css">
-  <link rel="stylesheet" href="./static/assets/css/index.css?v=52">
+  <link rel="stylesheet" href="./static/assets/css/index.css?v=53">
 </head>
 <body data-section="0">
   <a class="skip-link" href="#gioi-thieu">Đến nội dung chính</a>
@@ -332,6 +332,14 @@
       }
       if (config.address) { const el = document.getElementById('contact-address'); el.textContent = config.address; el.hidden = false; }
 
+      const contactCard = document.getElementById('contact-24h');
+      const contactFooter = contactCard.parentElement;
+      const contactScreen = document.getElementById('lien-he');
+      function placeContactCard() {
+        const parent = mobile.matches ? contactScreen : contactFooter;
+        if (contactCard.parentElement !== parent) parent.appendChild(contactCard);
+      }
+
       // Keep complete panel content inside one viewport, including short screens.
       const layouts = sections.map(section => {
         const slot = document.createElement('div');
@@ -382,6 +390,7 @@
       });
       function fitScreenLayouts() {
         layoutFrame = 0;
+        placeContactCard();
         updateFooterTabs();
         const height = window.ScreenScroll ? window.ScreenScroll.viewportHeight() : window.innerHeight;
         document.documentElement.style.setProperty('--screen-height', height + 'px');

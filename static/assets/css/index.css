@@ -507,4 +507,8 @@
     @media(max-width:767px) and (orientation:landscape){
       html.ios-chrome .intro .screen-layout{height:var(--screen-height,100svh)}
     }
+
+    @media(max-width:767px){
+      .contact-screen>.contact-24h{position:absolute;left:24px;right:24px;bottom:20px;z-index:5;transform:none;width:auto;max-width:none;margin:0;flex-direction:row;align-items:stretch;justify-content:center;gap:10px}
+    }
   
