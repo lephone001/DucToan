@@ -8,7 +8,7 @@
   <meta name="description" content="Khoan cắt bê tông, tháo dỡ công trình, khoan cắt bê tông. Đức Toàn phục vụ tại TPHCM, Bình Dương, Đồng Nai và Long An.">
   <link rel="icon" type="image/png" href="./static/assets/brand/logo-original.png">
   <link rel="stylesheet" href="./static/assets/css/animate.min.css">
-  <link rel="stylesheet" href="./static/assets/css/index.css?v=50">
+  <link rel="stylesheet" href="./static/assets/css/index.css?v=51">
 </head>
 <body data-section="0">
   <a class="skip-link" href="#gioi-thieu">Đến nội dung chính</a>
@@ -16,7 +16,7 @@
     <img src="./static/assets/brand/logo-original.png" width="64" height="64" alt="" decoding="async">
     <div>
         <span><b class="brand-name-red">ĐỨC</b> <b class="brand-name-blue">TOÀN</b>  </span>
-        <p style="font-size: 12px;font-family: auto;color:#b4ceff57">ductoan.com</p>
+        <p style="font-size: 12px;font-family: auto;color:#ffffffcc">ductoan.com</p>
     </div>
   </a>
   <nav class="progress" aria-label="Điều hướng 7 phần">
@@ -809,7 +809,7 @@
         // Mouth and tip stay inside the virtual funnel's responsive bounds.
         const radius = geometry.width * (.009 + .421 * Math.pow(u, 1.5));
         const axis = geometry.left + geometry.width * (.535 - .025 * u + Math.sin(u * Math.PI * 2) * .006);
-        const theta = time * .68 + u * Math.PI * 7 + phase, z = Math.sin(theta);
+        const theta = time * 1.4 + u * Math.PI * 7 + phase, z = Math.sin(theta);
         return { x: axis + Math.cos(theta) * radius, y: geometry.top + geometry.height * (.965 - .85 * u) + z * radius * .12, theta, z, scale: .55 + (z + 1) * .35 };
       }
       function lightningNoise(seed) {
@@ -872,12 +872,16 @@
         ctx.restore();
       }
       function drawVortex(e, dt) {
-        const ctx = e.ctx, base = e.vortexGeometry;
-        const orbit = time * Math.PI * 2 / 42;
-        const radiusX = mobile.matches ? Math.min(18, e.w * .048) : Math.min(42, e.w * .03);
-        const radiusY = mobile.matches ? 5 : 8;
-        // Move the entire funnel together while its tip stays over the rubble.
-        const geometry = { ...base, left: base.left + Math.sin(orbit) * radiusX, top: base.top + (1 - Math.cos(orbit)) * radiusY };
+        const ctx = e.ctx, geometry = e.vortexGeometry;
+        const footX = geometry.left + geometry.width * .535;
+        const footY = geometry.top + geometry.height * .965;
+        e.vortexTravelTime = (e.vortexTravelTime || 0) + dt;
+        const travelPhase = e.vortexTravelTime * Math.PI * 2 / 24;
+        const travelX = -50 * (1 - Math.cos(travelPhase));
+        const sway = Math.sin(travelPhase) * (mobile.matches ? Math.PI / 90 : Math.PI / 72);
+        // Move the full funnel 100px left and back while it gently turns around its tip.
+        ctx.translate(travelX, 0);
+        ctx.translate(footX, footY); ctx.rotate(sway); ctx.translate(-footX, -footY);
         drawVortexAtmosphere(e, geometry.left + geometry.width * .52, geometry.top + geometry.height * .52);
         ctx.lineCap = 'round'; ctx.lineJoin = 'round';
         // Cached fuzzy clusters provide volume along the rotating rails.
