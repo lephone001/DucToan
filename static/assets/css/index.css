@@ -470,7 +470,7 @@
       .process-heading .eyebrow{font-size:clamp(14px,1.8svh,18px)}
       .process #process-title{font-size:clamp(32px,8.2vw,48px);line-height:1.12}
       .process .steps li{min-height:clamp(54px,6.8svh,70px);padding:7px 12px;gap:10px;font-size:clamp(13px,1.8svh,18px);line-height:1.35}
-      .process .steps b{font-size:clamp(29px,9vw,39px);min-width:36px}
+      .process .steps b{font-size:clamp(25px,2vw,30px);min-width:36px}
       .process .orb{top:auto;bottom:calc(var(--mobile-orb-bottom) + clamp(37px,10.5vw,70px) - 30.16vw);right:0;width:60%;height:65vw}
       .process-energy-toggle{left:70%;top:calc(100% - var(--mobile-orb-bottom) - clamp(37px,10.5vw,70px));bottom:auto;transform:translate(-50%,-50%)}
     }
