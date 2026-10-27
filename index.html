@@ -7,9 +7,8 @@
   <title>ĐỨC TOÀN — Khoan cắt bê tông</title>
   <meta name="description" content="Khoan cắt bê tông, tháo dỡ công trình, khoan cắt bê tông. Đức Toàn phục vụ tại TPHCM, Bình Dương, Đồng Nai và Long An.">
   <link rel="icon" type="image/png" href="./static/assets/brand/logo-original.png">
-  <link rel="stylesheet" href="./static/assets/css/fullpage.min.css">
   <link rel="stylesheet" href="./static/assets/css/animate.min.css">
-  <link rel="stylesheet" href="./static/assets/css/index.css?v=39">
+  <link rel="stylesheet" href="./static/assets/css/index.css?v=43">
 </head>
 <body data-section="0">
   <a class="skip-link" href="#gioi-thieu">Đến nội dung chính</a>
@@ -147,7 +146,6 @@
           <figure><div class="photo-ring"><img src="./static/assets/photos/05-foundation-breaking.webp" width="512" height="512" loading="lazy" decoding="async" alt="Minh họa máy phá móng bê tông"></div><figcaption>Phá móng công trình</figcaption></figure>
           <figure><div class="photo-ring"><img src="./static/assets/photos/06-site-handover.webp" width="512" height="512" loading="lazy" decoding="async" alt="Minh họa đội thi công kiểm tra mặt bằng trước khi bàn giao"></div><figcaption>Thu dọn &amp; bàn giao</figcaption></figure>
         </div>
-        <p class="gallery-footnote">Hình ảnh được tạo bằng AI để minh họa dịch vụ, không phải hồ sơ công trình thực tế.</p>
       </div>
       <span class="section-number">05 / 07</span>
     </section>
@@ -228,7 +226,6 @@
   "brand": "ĐỨC TOÀN",
   "service": "ĐỤC PHÁ BÊ TÔNG",
   "domain": "ductoan.com",
-  "fullpageLicenseKey": "",
   "phone": null,
   "zaloUrl": null,
   "address": null,
@@ -270,7 +267,7 @@
 </script>
   <script src="./static/assets/js/logo-particles.js" defer></script>
   <script src="./static/assets/js/process-ribbons.js?v=3" defer></script>
-  <script src="./static/assets/js/fullpage.min.js"></script>
+  <script src="./static/assets/js/screen-scroll.js"></script>
   <script>
     (() => {
       'use strict';
@@ -405,7 +402,8 @@
             const heading = section.querySelector('.gallery-heading');
             const note = section.querySelector('.gallery-footnote');
             const caption = Math.max(...Array.from(gallery.querySelectorAll('figcaption'), el => el.offsetHeight + parseFloat(getComputedStyle(el).marginTop)));
-            const remaining = available - heading.offsetHeight - note.offsetHeight - parseFloat(grid.marginTop) - parseFloat(getComputedStyle(note).marginTop) - 8;
+            const noteHeight = note ? note.offsetHeight + parseFloat(getComputedStyle(note).marginTop) : 0;
+            const remaining = available - heading.offsetHeight - noteHeight - parseFloat(grid.marginTop) - 8;
             const columnWidth = (gallery.clientWidth - parseFloat(grid.columnGap) * (columns - 1)) / columns;
             const phoneScale = mobile.matches ? .78 : 1;
             const diameter = Math.max(24, Math.min(280, columnWidth, (remaining - parseFloat(grid.rowGap) * (rows - 1)) / rows - caption) * phoneScale);
@@ -1043,7 +1041,7 @@
         if (vortexGlowSprites) { vortexGlowSprites.forEach(sprite => { sprite.width = sprite.height = 1; }); vortexGlowSprites = null; }
         if (vortexTuftSprites) { vortexTuftSprites.forEach(sprite => { sprite.width = sprite.height = 1; }); vortexTuftSprites = null; }
       });
-      if (typeof window.fullpage === 'function') {
+      if (typeof window.ScreenScroll === 'function') {
         // Layouts fit one panel, so wheel and touch gestures always change screens.
         sections.forEach(section => {
           const panel = document.createElement('div');
@@ -1051,8 +1049,7 @@
           section.before(panel); panel.appendChild(section); fullpagePanels.push(panel);
         });
         try {
-          fullpageInstance = new window.fullpage('#fullpage', {
-            licenseKey: config.fullpageLicenseKey || '',
+          fullpageInstance = new window.ScreenScroll('#fullpage', {
             sectionSelector: '.fullpage-section',
             verticalCentered: false,
             // Reduced motion uses instant panel changes, without changing scroll modes.
@@ -1084,7 +1081,7 @@
           const initialIndex = sections.findIndex(section => '#' + section.id === window.location.hash);
           if (initialIndex > 0) fullpageInstance.silentMoveTo(initialIndex + 1);
         } catch (error) {
-          if (window.fullpage_api && document.documentElement.classList.contains('fp-enabled')) window.fullpage_api.destroy('all');
+          if (fullpageInstance) fullpageInstance.destroy();
           fullpageInstance = null;
           fullpagePanels.forEach(panel => panel.replaceWith(...panel.childNodes));
         }

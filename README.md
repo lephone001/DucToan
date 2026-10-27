@@ -1,10 +1,10 @@
 # Đức Toàn 七屏静态页面
 
-页面入口和配置位于 `index.html`，样式位于 `static/assets/css/index.css`，Logo 与流体光带脚本位于 `static/assets/js/`。这是纯静态页面，没有 Nunjucks 模板语法，不需要服务端渲染或构建。fullPage 4.0.41 的脚本、样式及 Animate.css 4.1.1 均已下载到本地并使用相对路径引用，保留原授权声明。图片和碎块精灵统一使用 `./static/assets/` 相对路径；将 `index.html` 与 `static` 文件夹一起移动即可。
+页面入口和配置位于 `index.html`，样式位于 `static/assets/css/index.css`，Logo、流体光带及整屏滚动脚本位于 `static/assets/js/`。这是纯静态页面，没有 Nunjucks 模板语法，不需要服务端渲染或构建。Animate.css 4.1.1 已下载到本地；图片和碎块精灵统一使用 `./static/assets/` 相对路径。将 `index.html` 与 `static` 文件夹一起移动即可。
 
 ## 本地查看
 
-可以直接双击 `index.html` 打开，fullPage 与 Animate.css 从本地加载。也可以在项目根目录运行可选的静态预览服务：
+可以直接双击 `index.html` 打开，整屏滚动脚本与 Animate.css 从本地加载。也可以在项目根目录运行可选的静态预览服务：
 
 ```powershell
 node preview.cjs
@@ -22,9 +22,9 @@ node preview.cjs
 6. 厂房背景与四项优势，桌面和手机均为 2×2，小屏缩小间距。
 7. 咨询入口、桌面四列页脚和返回顶部。手机及矮横屏页脚通过三个可用键盘操作的标签切换服务、区域和信息。
 
-电脑和手机均使用 fullpage.js 的整屏滚动，切换时长 850ms，七点导航、下一屏与返回顶部统一调用 `moveTo()`。手机支持上下滑动翻屏，`touchSensitivity: 8`；取消宽度和高度断点自动停用，横屏仍保持 fullpage 效果。初始化时为各屏创建 `.fullpage-section` 外层，各屏固定为当前视口高度，`scrollOverflow: false`，滚轮与手势直接切换整屏，不生成屏内滚动容器。响应式布局压缩间距，并按剩余高度调整六张圆图尺寸；极矮屏幕对内容整体缩放以保留完整文字。减少动态效果模式关闭装饰动画，并将翻屏时长设为 0ms，即时切换，避免动态更换滚动模式时的库内部冲突。右侧导航通过 fullPage 回调及 IntersectionObserver 更新，可通过 Tab 访问。打开咨询弹窗时暂停全屏滚轮与键盘控制，关闭后恢复。CDN 未加载时保留原生锚点跳转。
+电脑和手机均使用本地 `screen-scroll.js` 整屏滚动，切换时长 850ms，七点导航、下一屏与返回顶部统一调用 `moveTo()`。手机支持上下滑动翻屏，触摸阈值为视口高度的 8%；横屏仍保持整屏切换。初始化时为各屏创建 `.fullpage-section` 外层，各屏固定为当前视口高度，滚轮与手势直接切换整屏，不生成屏内滚动容器。响应式布局压缩间距，并按剩余高度调整六张圆图尺寸；极矮屏幕对内容整体缩放以保留完整文字。减少动态效果模式关闭装饰动画，并将翻屏时长设为 0ms，即时切换。右侧导航通过切屏回调及 IntersectionObserver 更新，可通过 Tab 访问。打开咨询弹窗时暂停全屏滚轮与键盘控制，关闭后恢复。滚动脚本未加载时保留原生锚点跳转。
 
-fullpage.js 授权密钥填写在 `index.html` 内 `id="site-config"` 的 JSON 中的 `fullpageLicenseKey` 字段；当前留空，保留库原有的署名与授权提示。密钥及使用条件参考 [fullPage 官方说明](https://alvarotrigo.com/fullPage/docs/#licensekey)。
+整屏滚动使用项目内的 `screen-scroll.js`，无需授权密钥。
 
 第二至五屏 Canvas 动画使用一个共享 RAF，至多绘制一屏；屏幕不可见、页面进入后台或咨询弹窗打开时暂停。首屏 Logo 复用 `static/assets/js/logo-particles.js`，5000 个聚合粒子、1000 个底层粒子与金边扫光循环，滚出视口或进入后台时暂停，减少动态效果模式显示静态 Logo。脚本内包含同一 Logo 的 PNG 像素采样副本，兼容直接双击打开；可见图片继续使用相对路径。ResizeObserver 负责调整画布，DPR 桌面上限 1.5，手机 1（Logo 特效上限 1.5）。减少动态效果偏好下保留静态特效与全部内容。
 
@@ -72,7 +72,7 @@ fullpage.js 授权密钥填写在 `index.html` 内 `id="site-config"` 的 JSON �
 
 尚未连接咨询提交接口；未使用真实手机硬件进行性能测试，未发布公网。
 
-接入 fullpage.js 后补测：1440 / 768 / 390 宽度的初始化、滚轮及方向键翻屏、七点跳转、弹窗下载与关闭、返回顶部、窗口切换、减少动态效果和 CDN 失效降级均通过。该记录为此前版本；当前已改为内容适配视口，取消屏内滚动。结果见 `screenshots/fullpage-check.json`。当前空授权密钥会产生库自带的两条授权提示，已单独记录。
+接入 fullpage.js 后补测：1440 / 768 / 390 宽度的初始化、滚轮及方向键翻屏、七点跳转、弹窗下载与关闭、返回顶部、窗口切换、减少动态效果和 CDN 失效降级均通过。该记录为此前版本；当前已改为内容适配视口，取消屏内滚动。结果见 `screenshots/fullpage-check.json`。旧版的空授权密钥曾产生两条授权提示；现已换用本地滚动脚本。
 
 改为静态页面后，实测桌面与手机宽度下直接 `file://` 打开，以及 HTTP 根目录和子目录访问：fullpage.js 正常初始化、七屏可跳转、显示的图片均正常加载。检查结果见 `screenshots/static-check.json`。
 
